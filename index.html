@@ -1,6 +1,300 @@
-<HTML>
-  <BODY>
-    <h1>Hey, world!</h1>
-    <p>Pretty unoriginal, right? I'm working on it!</p>
-  </BODY>
-</HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seamus Bradley | Professional Portfolio</title>
+    <style>
+        /* Base Styling */
+        :root {
+            --primary: #1e3a8a; /* Deep Trust Blue */
+            --secondary: #0284c7; /* Sky Blue Accent */
+            --dark: #1f2937; /* Dark Charcoal Text */
+            --light: #f9fafb; /* Light Gray Background */
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--dark);
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Header / Hero Section */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 1.5rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.05em;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            font-weight: 300;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Nav Links */
+        .contact-links {
+            margin-top: 1.5rem;
+        }
+
+        .contact-links a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 10px;
+            border: 1px solid rgba(255,255,255,0.4);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .contact-links a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* Sections Styling */
+        section {
+            background: var(--white);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        p.summary-text {
+            font-size: 1.1rem;
+            color: #4b5563;
+        }
+
+        /* Grid Layout for Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1-fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-category h3 {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-category ul {
+            list-style-type: none;
+        }
+
+        .skill-category li {
+            background: var(--light);
+            margin-bottom: 0.25rem;
+            padding: 0.4rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            border-left: 3px solid var(--secondary);
+        }
+
+        /* Experience Timeline */
+        .job {
+            margin-bottom: 1.5rem;
+        }
+
+        .job:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.15rem;
+        }
+
+        .job-company {
+            color: var(--secondary);
+            font-style: italic;
+        }
+
+        .job-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .job ul {
+            padding-left: 1.25rem;
+            color: #4b5563;
+        }
+
+        .job li {
+            margin-bottom: 0.4rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #9ca3af;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .job-header {
+                flex-direction: column;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Seamus Titus Bradley</h1>
+        <p>Customer Service & Client Logistics Specialist | Psychology Graduate</p>
+        <div class="contact-links">
+            <a href="mailto:seamusbradley82@gmail.com">Email Me</a>
+            <a href="https://seamusbradley82.github.io" target="_blank">GitHub</a>
+          
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Professional Summary -->
+        <section id="summary">
+            <h2>Professional Summary</h2>
+            <p class="summary-text">
+                Customer-centric professional with a Bachelor’s Degree in Psychology actively transitioning a strong background in logistics and manufacturing into a dedicated Customer Service role. Proven success managing high-stakes, client-facing interactions—specifically coordinating material logistics for General Motors (GM) and interfacing directly with truck drivers and carriers to ensure seamless supply chain workflows. Highly proficient in navigating SAP inventory systems, resolving order discrepancies under tight timelines, and leveraging an understanding of human behavior to diffuse high-pressure situations, build strong corporate relationships, and deliver exceptional service.
+            </p>
+        </section>
+
+        <!-- Core Skills Split Grid -->
+        <section id="skills">
+            <h2>Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Client & Customer Service</h3>
+                    <ul>
+                        <li>Client-Facing Communication</li>
+                        <li>De-escalation & Problem Solving</li>
+                        <li>Account Coordination (GM)</li>
+                        <li>Vendor & Driver Relations</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Systems & Logistics</h3>
+                    <ul>
+                        <li>SAP Inventory Management</li>
+                        <li>Supply Chain Workflows</li>
+                        <li>Process Standard Operating Procedures</li>
+                        <li>Documentation & Compliance</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Technical & Operational</h3>
+                    <ul>
+                        <li>Forklift & Material Handling Equipment</li>
+                        <li>Precision Micro-Assembly</li>
+                        <li>Quality Assurance Testing</li>
+                        <li>ISO 13485 & FDA Regulations</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience">
+            <h2>Professional Experience</h2>
+
+            <!-- Job 1 -->
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Material Handler & Forklift Operator</span>
+                    <span class="job-date">Dates of Employment</span>
+                </div>
+                <div class="job-company">Purem by Eberspächer</div>
+                <ul>
+                    <li>Served as a primary point of contact for external freight clients and truck drivers, managing high-volume arrivals and ensuring efficient inbound/outbound logistics.</li>
+                    <li>Utilized SAP inventory frameworks to document parts allocation, verify high-stakes cargo manifests, and prevent supply chain delays for corporate partners including General Motors.</li>
+                    <li>Maintained an incident-free safety record operating heavy material-handling equipment in fast-paced production spaces.</li>
+                    <li>Authored and implemented a step-by-step SAP reference guide that standardized inventory logging processes, cutting data-entry errors and speeding up new-hire training workflows.</li>
+                </ul>
+            </div>
+
+            <hr style="border: 0; border-top: 1px dashed #e5e7eb; margin: 1.5rem 0;">
+
+            <!-- Job 2 -->
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Assembly Technician</span>
+                    <span class="job-date">Dates of Employment</span>
+                </div>
+                <div class="job-company">Katalyst Surgical</div>
+                <ul>
+                    <li>Executed high-precision micro-assembly of advanced fiber optic laser probes and illuminated surgical equipment within an ISO-certified cleanroom environment.</li>
+                    <li>Strictly adhered to FDA regulations and ISO 13485 standards while performing rigorous functional testing and microscopic inspections to guarantee zero-defect product reliability.</li>
+                    <li>Maintained meticulous technical documentation and collaborated closely with engineering teams to troubleshoot component variances and optimize assembly workflows.</li>
+                </ul>
+            </div>
+
+            <hr style="border: 0; border-top: 1px dashed #e5e7eb; margin: 1.5rem 0;">
+
+            <!-- Job 3 -->
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Facilities Maintenance & Janitorial Specialist</span>
+                    <span class="job-date">Dates of Employment</span>
+                </div>
+              <div class="job-company">Straub's Fine Grocers</div>
+              <ul>
+                <li>Upheld high-end property preservation standards to deliver a pristine, hazard-free, and welcoming retail shopping atmosphere for local St. Louis clientele.</li>
+                <li>Managed structural facilities maintenance tasks, monitored localized chemical application safety, and audited facility MRO supplies to prevent resource shortages.</li>
+              </ul>
+            </div>
+        </section>
+    </div>
+
+  <footer>
+    <h2>© 2025 Seamus Bradley. Built and hosted on GitHub Pages.</h2>
+  </footer>
+  
+</body>
+</html>
+  
